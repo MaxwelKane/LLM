@@ -347,7 +347,7 @@ def _split_and_load_docs(docs):
         chunk_size=5000,
         chunk_overlap=1000,
     )
-    document_chunks = text_splitter.split_documents(docs) if len(text_splitter)*text_splitter.chunk_size < 300_000 else text_splitter.split_documents(docs[:300_000 // text_splitter.chunk_size]) +text_splitter.split_documents(docs[300_000 // text_splitter.chunk_size:600_000])
+    document_chunks = text_splitter.split_documents(docs) #if len(text_splitter)*text_splitter.chunk_size < 300_000 else text_splitter.split_documents(docs[:300_000 // text_splitter.chunk_size]) +text_splitter.split_documents(docs[300_000 // text_splitter.chunk_size:600_000])
 
     # Add to ChromaDB as before
     if "vector_db" not in st.session_state:
