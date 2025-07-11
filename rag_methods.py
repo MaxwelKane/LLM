@@ -228,7 +228,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from pinecone import Pinecone
-from langchain_pinecone import PineconeVectorStore
+# from langchain_pinecone import PineconeVectorStore
 
 # Import the query_alt.py function
 from query_alt import query_pinecone_simple
